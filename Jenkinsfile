@@ -2,12 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage('Clone') {
-      steps {
-        git 'https://github.com/Root-x12/NODE-APP.git'
-      }
-    }
-
     stage('Install & Test') {
       steps {
         sh 'npm install'
